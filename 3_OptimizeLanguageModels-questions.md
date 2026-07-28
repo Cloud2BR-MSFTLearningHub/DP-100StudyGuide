@@ -1,14 +1,7 @@
 # Optimize Language Models for AI Applications: <br/> Sample Questions and Answers
 
-Costa Rica
-
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-01-04
-
-----------
-
-> [!NOTE]
+> **Note**
+>
 > The questions and answers provided in this study guide are for practice purposes only and are not official practice questions.
 > They are intended to help you prepare for the [DP-100 Microsoft certification exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist-associate/).
 > For additional preparation materials and the most up-to-date information, please refer to the [official Microsoft documentation](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/).
@@ -20,7 +13,7 @@ Last updated: 2025-01-04
 - Fine-tuning language models
 - Responsible AI for language models
 
-<details>
+<details markdown="1">
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/)
@@ -29,7 +22,7 @@ Last updated: 2025-01-04
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
 - [Q1: Azure AI Services vs Azure AI Foundry](#q1-azure-ai-services-vs-azure-ai-foundry)
@@ -45,7 +38,8 @@ Last updated: 2025-01-04
 
 </details>
 
-> [!TIP]
+> **Tip**
+>
 > **Azure AI Resource Types:**
 
 | Resource Type | Services Included | Best For |
@@ -53,7 +47,8 @@ Last updated: 2025-01-04
 | **Azure AI Services** | Speech, Language, Translator, Vision, Face, Custom Vision, Document Intelligence | Traditional AI services, single endpoint |
 | **Azure AI Foundry** | OpenAI, Speech, Language, Content Safety, Translator, Vision, Face, Document Intelligence, Content Understanding | Generative AI development, integrated workflow |
 
-> [!TIP]
+> **Tip**
+>
 > **Project Types in Azure AI:**
 
 | Project Type | Resources | Use Case |
@@ -61,7 +56,8 @@ Last updated: 2025-01-04
 | **Foundry Projects** | Azure AI Foundry resource | Standard generative AI development, chat apps, agents |
 | **Hub-based Projects** | Azure AI Foundry + hub resource, managed compute, Prompt Flow, storage, key vault | Advanced AI development, Prompt Flow, fine-tuning, collaborative projects |
 
-> [!TIP]
+> **Tip**
+>
 > **Language Model Evaluation Metrics:**
 
 | Metric | Description | Measures |
@@ -72,7 +68,8 @@ Last updated: 2025-01-04
 | **Fluency** | Grammatical and linguistic accuracy | Language correctness |
 | **Similarity** | Match between output and ground truth | Semantic similarity |
 
-> [!TIP]
+> **Tip**
+>
 > **Search Methods in RAG:**
 
 | Method | Description | Best For |
@@ -82,7 +79,8 @@ Last updated: 2025-01-04
 | **Vector Search** | Mathematical vector similarity | Semantic similarity, unstructured data |
 | **Hybrid Search** | Combines multiple methods | Comprehensive retrieval, best of all methods |
 
-> [!TIP]
+> **Tip**
+>
 > **Fine-tuning Parameters:**
 
 | Parameter | Description | Impact |
@@ -92,7 +90,8 @@ Last updated: 2025-01-04
 | **n_epochs** | Full cycles through training data | More = better learning, risk of overfitting |
 | **seed** | Reproducibility control | Same seed = reproducible results |
 
-> [!TIP]
+> **Tip**
+>
 > **Responsible AI Framework (4 Ms):**
 
 | Stage | Description |
@@ -102,7 +101,8 @@ Last updated: 2025-01-04
 | **Mitigate** | Implement safeguards at multiple layers |
 | **Manage** | Deploy and operate responsibly |
 
-> [!TIP]
+> **Tip**
+>
 > **AI Evaluation Metrics Types:**
 
 | Category | Metrics | Purpose |
@@ -398,10 +398,3 @@ def safe_generate(prompt, model="gpt-4"):
    - Use multiple metrics for comprehensive assessment
    - Implement continuous monitoring in production
    - Regular model performance reviews
-
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1391-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-05</p>
-</div>
-<!-- END BADGE -->

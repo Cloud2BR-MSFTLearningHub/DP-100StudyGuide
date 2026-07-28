@@ -1,14 +1,7 @@
 # Explore Data and Run Experiments: <br/>Sample Questions and Answers
 
-Costa Rica
-
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-01-04
-
-----------
-
-> [!NOTE]
+> **Note**
+>
 > The questions and answers provided in this study guide are for practice purposes only and are not official practice questions.
 > They are intended to help you prepare for the [DP-100 Microsoft certification exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist-associate/).
 > For additional preparation materials and the most up-to-date information, please refer to the [official Microsoft documentation](https://learn.microsoft.com/en-us/training/paths/explore-data-experiment-azure-machine-learning/).
@@ -19,7 +12,7 @@ Last updated: 2025-01-04
 - Track experiments with MLflow
 - Use Automated Machine Learning (AutoML)
 
-<details>
+<details markdown="1">
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Work with data in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-data)
@@ -30,7 +23,7 @@ Last updated: 2025-01-04
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
 - [Q1: Data Asset Types](#q1-data-asset-types)
@@ -46,7 +39,8 @@ Last updated: 2025-01-04
 
 </details>
 
-> [!TIP]
+> **Tip**
+>
 > **Data Asset Types:**
 
 | Asset Type | Use Case | Best For |
@@ -56,7 +50,8 @@ Last updated: 2025-01-04
 | **mltable** | Standardized dataset definition | v2 SDK, AutoML, reproducible pipelines |
 | **uri_folder** | Reference to storage folder | Batch processing, file collections |
 
-> [!TIP]
+> **Tip**
+>
 > **Supported Data Paths:**
 
 | Path Type | Format | Example |
@@ -66,7 +61,8 @@ Last updated: 2025-01-04
 | **Azure Data Lake Gen2** | `abfss://` | `abfss://filesystem@account.dfs.core.windows.net/folder/file` |
 | **Datastore** | `azureml://` | `azureml://datastores/datastore_name/paths/folder/file` |
 
-> [!TIP]
+> **Tip**
+>
 > **MLflow Logging Functions:**
 
 | Function | Purpose | Example Usage |
@@ -76,7 +72,8 @@ Last updated: 2025-01-04
 | **mlflow.log_artifact()** | Log file (plot, model) | `mlflow.log_artifact("confusion_matrix.png")` |
 | **mlflow.log_model()** | Log ML model | `mlflow.sklearn.log_model(model, "model")` |
 
-> [!TIP]
+> **Tip**
+>
 > **AutoML Experiment Limits:**
 
 | Parameter | Description | Impact |
@@ -86,7 +83,8 @@ Last updated: 2025-01-04
 | **max_trials** | Maximum number of models to train | Balances exploration vs time |
 | **enable_early_termination** | Stop if score isn't improving | Saves compute resources |
 
-> [!TIP]
+> **Tip**
+>
 > **AutoML Data Guardrails:**
 
 | Guardrail | Purpose | States |
@@ -95,7 +93,8 @@ Last updated: 2025-01-04
 | **Missing Feature Values Imputation** | Handles missing data | Passed / Done / Alerted |
 | **High Cardinality Feature Detection** | Identifies features with many unique values | Passed / Done / Alerted |
 
-> [!TIP]
+> **Tip**
+>
 > **Command Job Configuration:**
 
 | Parameter | Description | Required |
@@ -304,10 +303,3 @@ ml_client.jobs.create_or_update(classification_job)
    - Register and version environments
    - Use minimal base images for faster startup
    - Test environments before production use
-
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1391-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-05</p>
-</div>
-<!-- END BADGE -->

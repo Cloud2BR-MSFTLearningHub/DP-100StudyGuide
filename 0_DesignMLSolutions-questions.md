@@ -1,14 +1,7 @@
 # Design and Prepare Machine Learning Solutions: <br/> Sample Questions and Answers
 
-Costa Rica
-
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-08-05
-
-----------
-
-> [!NOTE]
+> **Note**
+>
 > The questions and answers provided in this study guide are for practice purposes only and are not official practice questions.
 > They are intended to help you prepare for the [DP-100 Microsoft certification exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist-associate/).
 > For additional preparation materials and the most up-to-date information, please refer to the [official Microsoft documentation](https://learn.microsoft.com/en-us/training/paths/design-machine-learning-solution/).
@@ -19,7 +12,7 @@ Last updated: 2025-08-05
 - Configure compute resources
 - Manage workspace security and access
 
-<details>
+<details markdown="1">
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure Machine Learning workspace](https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace)
@@ -30,7 +23,7 @@ Last updated: 2025-08-05
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
 - [Q1: Azure Machine Learning Workspace Components](#q1-azure-machine-learning-workspace-components)
@@ -46,7 +39,8 @@ Last updated: 2025-08-05
 
 </details>
 
-> [!TIP]
+> **Tip**
+>
 > **Azure Machine Learning Workspace Architecture:**
 
 When a workspace is provisioned, Azure automatically creates supporting resources:
@@ -58,7 +52,8 @@ When a workspace is provisioned, Azure automatically creates supporting resource
 | **Application Insights** | Monitor predictive services and track performance |
 | **Azure Container Registry** | Store Docker images for ML environments (created when needed) |
 
-> [!TIP]
+> **Tip**
+>
 > **Workspace Creation Methods:**
 
 | Method | Use Case | Complexity |
@@ -68,7 +63,8 @@ When a workspace is provisioned, Azure automatically creates supporting resource
 | **Azure CLI** | Automation, scripting, CI/CD pipelines | Medium |
 | **Python SDK** | Programmatic control, integration with ML workflows | High |
 
-> [!TIP]
+> **Tip**
+>
 > **Azure ML Security Roles:**
 
 | Role | Permissions | Best For |
@@ -79,7 +75,8 @@ When a workspace is provisioned, Azure automatically creates supporting resource
 | **AzureML Data Scientist** | All actions except compute management and workspace settings | Standard data scientists |
 | **AzureML Compute Operator** | Create, change, and manage compute resources | MLOps engineers |
 
-> [!TIP]
+> **Tip**
+>
 > **Compute Types Comparison:**
 
 | Compute Type | Use Case | Scaling | Cost Model |
@@ -90,7 +87,8 @@ When a workspace is provisioned, Azure automatically creates supporting resource
 | **Attached Compute** | Use existing resources (VMs, Databricks) | External management | External billing |
 | **Serverless Compute** | On-demand training jobs | Fully managed | Pay per job execution |
 
-> [!TIP]
+> **Tip**
+>
 > **Workspace Assets:**
 
 | Asset Type | Description | Example Use Case |
@@ -100,7 +98,8 @@ When a workspace is provisioned, Azure automatically creates supporting resource
 | **Data** | Datasets and data references | Manage training and validation datasets |
 | **Components** | Reusable pipeline steps | Build modular ML pipelines |
 
-> [!TIP]
+> **Tip**
+>
 > **Compute Cluster Configuration:**
 
 | Parameter | Description | Considerations |
@@ -270,11 +269,3 @@ ml_client.compute.begin_create_or_update(compute_cluster)
    - Use ARM templates or CLI scripts for reproducible deployments
    - Integrate workspace creation into CI/CD pipelines
    - Version control your infrastructure code
-
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1391-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-05</p>
-</div>
-<!-- END BADGE -->
-

@@ -1,14 +1,7 @@
 # Train and Deploy Models: <br/> Sample Questions and Answers
 
-Costa Rica
-
-[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
-Last updated: 2025-01-04
-
-----------
-
-> [!NOTE]
+> **Note**
+>
 > The questions and answers provided in this study guide are for practice purposes only and are not official practice questions.
 > They are intended to help you prepare for the [DP-100 Microsoft certification exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist-associate/).
 > For additional preparation materials and the most up-to-date information, please refer to the [official Microsoft documentation](https://learn.microsoft.com/en-us/training/paths/train-deploy-models-azure-machine-learning/).
@@ -21,7 +14,7 @@ Last updated: 2025-01-04
 - Monitor and manage model deployments
 - Implement responsible AI practices
 
-<details>
+<details markdown="1">
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Hyperparameter tuning](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters)
@@ -32,7 +25,7 @@ Last updated: 2025-01-04
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
 - [Q1: Hyperparameter Sampling Methods](#q1-hyperparameter-sampling-methods)
@@ -48,7 +41,8 @@ Last updated: 2025-01-04
 
 </details>
 
-> [!TIP]
+> **Tip**
+>
 > **Hyperparameter Sampling Methods:**
 
 | Method | Description | Parameter Types | Use Case |
@@ -58,7 +52,8 @@ Last updated: 2025-01-04
 | **Sobol Sampling** | Quasi-random with better coverage | Continuous only | Large search spaces, reproducible results |
 | **Bayesian Sampling** | Uses previous results to guide selection | Continuous | Expensive training, iterative improvement |
 
-> [!TIP]
+> **Tip**
+>
 > **Early Termination Policies:**
 
 | Policy | Parameters | Description |
@@ -67,7 +62,8 @@ Last updated: 2025-01-04
 | **Median Stopping** | None | Terminates runs performing worse than median of all runs |
 | **Truncation Selection** | truncation_percentage | Terminates lowest performing percentage of runs |
 
-> [!TIP]
+> **Tip**
+>
 > **Endpoint Types Comparison:**
 
 | Endpoint Type | Use Case | Response Time | Scalability | Billing |
@@ -75,7 +71,8 @@ Last updated: 2025-01-04
 | **Online Endpoint** | Real-time inference | Low latency (ms) | Auto-scale based on load | Pay per hour (always on) |
 | **Batch Endpoint** | Bulk processing | Asynchronous | Process large datasets | Pay per job execution |
 
-> [!TIP]
+> **Tip**
+>
 > **Model Registration Types:**
 
 | Type | Description | Best For |
@@ -84,7 +81,8 @@ Last updated: 2025-01-04
 | **Custom** | Custom model format | Specialized models not supported by MLflow |
 | **Triton** | NVIDIA Triton inference server | Deep learning, TensorFlow, PyTorch |
 
-> [!TIP]
+> **Tip**
+>
 > **MLflow Model Signatures:**
 
 | Signature Type | Input Format | Use Case |
@@ -92,7 +90,8 @@ Last updated: 2025-01-04
 | **Column-based** | pandas.DataFrame | Tabular data, structured datasets |
 | **Tensor-based** | numpy.ndarray | Images, text, unstructured data |
 
-> [!TIP]
+> **Tip**
+>
 > **Responsible AI Principles:**
 
 | Principle | Description |
@@ -103,7 +102,8 @@ Last updated: 2025-01-04
 | **Transparency** | Users understand how decisions are made |
 | **Accountability** | Human oversight and responsibility for AI decisions |
 
-> [!TIP]
+> **Tip**
+>
 > **Model Evaluation Metrics:**
 
 | Metric | Type | Formula | Best For |
@@ -394,10 +394,3 @@ ml_client.jobs.create_or_update(pipeline_job)
    - Choose appropriate endpoint types for your use case
    - Configure parallelization for batch workloads
    - Monitor and adjust resource allocation
-
-<!-- START BADGE -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1391-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-05</p>
-</div>
-<!-- END BADGE -->
